@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+/* Bottoni sopra-destra */
+
+.upper-right-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.upper-right-buttons .left-button,
+.upper-right-buttons .right-button {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+/* Fine bottoni sopra-destra*/
+
+/* Main box */
+
+section .main-box {
+    height: 815px;
+    width: 1817px;
+    background-color: red;
+}
+
+/* Fine main box */
