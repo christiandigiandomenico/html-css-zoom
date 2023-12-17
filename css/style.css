@@ -11,6 +11,20 @@ body {
 
 /* Bottoni sopra-destra */
 
+main {
+    position: relative;
+}
+
+.nav-container {
+    height: 30px;
+    background-color: black;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
 .upper-right-buttons {
     display: flex;
     justify-content: flex-end;
@@ -33,33 +47,36 @@ body {
 
 /* Main box */
 
+
+
 section {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 50px;
 }
 
 section .main-box {
     width: 1717px;
-    background-color: red;
-    margin-bottom: 30px;
+
+    margin-top: 50px;
+    margin-bottom: 80px;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 .main-box .panel {
 
     height: 135px;
     width: calc(100% / 7 - 10px);
-    background-color: blue;
-
-    margin-bottom: 20px;
+    min-width: 200px;
+    min-height: 135px;
 
     position: relative;
+
+    margin-bottom: 30px;
 }
 
 .nickname {
@@ -74,7 +91,9 @@ section .main-box {
 }
 
 .nickname-image {
-    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -90,6 +109,67 @@ section .main-box {
 
     position: fixed;
     bottom: 0;
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.bar-align {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.section-right {
+    color: red;
+    background-color: #4a4a4a;
+    width: 10%;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+.section-middle {
+    color: white;
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.icon-big.green {
+    color: #4bc800;
+}
+
+table tr td {
+    text-align: center;
+    width: 75px;
+    white-space: nowrap;
+}
+
+.icon-big {
+    font-size: 25px;
 }
 
 /* Fine bottom nav */
